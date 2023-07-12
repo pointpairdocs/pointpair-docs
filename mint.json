@@ -2,14 +2,14 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "PointPair",
   "logo": {
-    "dark": "/logo/logo.svg",
-    "light": "/logo/logo.svg"
+    "dark": "/logo/PointPair.svg",
+    "light": "/logo/PointPair.svg"
   },
   "favicon": "/icon.png",
   "colors": {
     "primary": "#24c108",
     "light": "#81D7F7",
-    "dark": "#004E7A"
+    "dark": "#24c108"
   },
   "topbarLinks": [
     {
