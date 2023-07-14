@@ -8,18 +8,18 @@
   "favicon": "/icon.png",
   "colors": {
     "primary": "#24c108",
-    "light": "#81D7F7",
+    "light": "#24c108",
     "dark": "#24c108"
   },
   "topbarLinks": [
     {
-      "name": "Documentation",
-      "url": "https://mintlify.com/docs"
+      "name": "Login",
+      "url": "https://portal.us.pointpair.com/signin"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "Get Started",
+    "url": "https://portal.us.pointpair.com/signup"
   },
   "tabs": [
     {
@@ -29,12 +29,12 @@
   ],
   "navigation": [
     {
-      "group": "Get Started",
-      "pages": ["introduction", "quickstart", "development"]
+      "group": "Overview",
+      "pages": ["getting-started"]
     },
     {
-      "group": "Essentials",
-      "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/settings", "essentials/navigation"]
+      "group": "Platforms",
+      "pages": ["platforms/platforms-quickstart", "platforms/WooCommerce"]
     },
     {
       "group": "API Documentation",
@@ -49,10 +49,5 @@
         "api-reference/endpoint/delete"
       ]
     }
-  ],
-  "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
-  }
+  ]
 }
