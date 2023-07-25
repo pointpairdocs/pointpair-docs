@@ -1,6 +1,15 @@
 {
   "$schema": "https://mintlify.com/schema.json",
   "name": "PointPair",
+  "api": {
+    "baseUrl": [
+      "https://api.us.pointpair.com/v1"
+    ],
+    "auth": {
+      "method": "basic",
+      "name": "API_KEY:SECRET_KEY"
+    }
+  },
   "logo": {
     "dark": "/logo/PointPair.svg",
     "light": "/logo/PointPair.svg"
@@ -38,10 +47,10 @@
     },
     {
       "group": "API Documentation",
-      "pages": ["api-reference/authentication"]
+      "pages": ["api-reference/start-here"]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Endpoints",
       "pages": [
         "api-reference/endpoint/get",
         "api-reference/endpoint/create",

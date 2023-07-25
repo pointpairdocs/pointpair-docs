@@ -1,0 +1,19 @@
+---
+title: "PointPair API Reference"
+---
+
+The PointPair API is organized around REST. Our API has predictable resource-oriented URLs, accepts form-encoded request bodies, returns JSON-encoded responses, and uses standard HTTP response codes, authentication, and verbs.
+
+## Base URL
+Please note that currently, only API calls from the United States are supported. You can make API calls to:
+```bash
+https://api.us.pointpair.com/v1/
+```
+
+## Authentication
+PointPair API uses API key-based authentication. You need to include your unique API key and Secret key in the `API_KEY` and `SECRET_KEY` Authentication header using Basic Authentication for each API request.
+You can view your API keys in the [PointPair Dashboard](https://portal.us.pointpair.com/). Test mode api keys have the prefix `test_` and live mode api keys have the prefix `live_`. There is only one secret key.
+
+```bash
+'Authorization': 'Basic <YOUR_API_KEY:YOUR_SECRET_KEY>'
+```
