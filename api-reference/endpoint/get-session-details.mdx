@@ -1,0 +1,60 @@
+---
+title: "Get Session Details"
+api: "GET /session_details/:id"
+description: "This endpoint gets the session details from the given id"
+---
+
+### Query Params
+<ParamField path="id" type="string">
+  The Session ID for the payment session you would like to query.
+</ParamField>
+
+### Response
+
+<ResponseField name="id" type="string">
+  Unique identifier for the payment session.
+</ResponseField>
+
+<ResponseField name="metadata" type="JSON or null">
+  Metadata passed as JSON object. Will not be shown if no metadata was passed in the new payment session endpoint.
+</ResponseField>
+
+<ResponseField name="order_amount" type="number">
+  The order amount for this payment session.
+</ResponseField>
+
+<ResponseField name="session_status" type="string">
+  Payment status of the session. `open` indicates payment is still not processed. `complete` indicates payment is completed. `refunded` indicates payment was refunded.
+</ResponseField>
+
+<ResponseField name="customer_firstname" type="string">
+  Firstname of the customer.
+</ResponseField>
+
+<ResponseField name="customer_lastname" type="string">
+  Lastname of the customer.
+</ResponseField>
+
+<ResponseField name="customer_email" type="string">
+  Email of the customer.
+</ResponseField>
+
+<ResponseField name="total_fee" type="number">
+  The total fee charged by the platform.
+</ResponseField>
+
+<ResponseField name="cashback_percentage" type="number">
+  The percentage used to calculate the cash points for the customer.
+</ResponseField>
+
+<ResponseField name="cashback_earned_by_customer" type="number">
+  The amount of cash points the customer earned.
+</ResponseField>
+
+<ResponseField name="merchant_earned" type="number">
+  The final amount the merchant received.
+</ResponseField>
+
+<ResponseField name="merchant_earned" type="boolean">
+  Indicates whether this payment session processed a real transaction (`true`) or a test transaction (`false`)
+</ResponseField>

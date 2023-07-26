@@ -52,10 +52,9 @@
     {
       "group": "Endpoints",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/update",
-        "api-reference/endpoint/delete"
+        "api-reference/endpoint/new-payment-session",
+        "api-reference/endpoint/get-session-details",
+        "api-reference/endpoint/get-cashpoints-percentage"
       ]
     }
   ]
